@@ -1,0 +1,31 @@
+.card-custom
+{
+    overflow:hidden;
+}
+.img
+{
+
+	transition:transform 1s;
+   
+}
+.img:hover
+{
+	transform:scale(1.2);
+    /* transform: rotate(-180deg); */
+}
+.h2
+{
+    border:2px solid blue;
+    border-radius:10px;
+    margin:15px 0px 15px 0px;
+}
+.whoweare
+{
+
+    transform: rotate(-45deg);
+    border:2px solid black;
+    border-radius: 50px;
+    width:300px;
+    height:300px;
+
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/custom.css">
+    <link rel="stylesheet" href="../../css/bootnavbar.css">
+</head>
+<body>
+     
+ <!-- navbar -->
+                      <nav class="navbar navbar-expand-lg navbar-dark bg-info col-md-12 mt-3" >
+                        <div class="container-fluid">
+                          <div class="row">
+                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                  <li class="nav-item"><a class="nav-link nav-custom" href="../../index.html">Home</a></li>
+                                  <li class="nav-item dropdown nav-custom">
+                                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Category</a>
+                                    <ul class="dropdown-menu">
+                                      <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="../WALL-TILES/wall-tile.html"  data-toggle="dropdown">Wall Tiles</a>
+                                        <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="../WALL-TILES/bathroom-wall-tile.html">Bathroom Wall Tiles</a></li>
+                                          <li><a class="dropdown-item" href="../WALL-TILES/kitchen-wall-tile.html">Kitchen Wall Tiles</a></li>
+                                          <li><a class="dropdown-item" href="../WALL-TILES/outdoor-wall-tile.html">Outdoor Wall Tiles</a></li>
+                                          <li><a class="dropdown-item" href="../WALL-TILES/living-wall-tile.html">Living Wall Tiles</a></li>
+                                          <li><a class="dropdown-item" href="/WALL-TILES/bedroom-wall-tile.html">Bedroom Wall Tiles</a></li>
+                                          <li><a class="dropdown-item" href="../WALL-TILES/commercialspace-wall-tile.html">Commercial Space Wall Tiles</a></li>
+                                        </ul>
+                                      </li>
+                                      <div class="dropdown-divider"></div>
+                                        <li class="nav-item dropdown">
+                                          <a class="dropdown-item dropdown-toggle" href="../FLOOR-TILES/floor-tile.html"  data-toggle="dropdown">Floor Tiles</a>
+                                          <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="../FLOOR-TILES/bathroom-floor-tile.html">Bathroom Floor Tiles</a></li>
+                                            <li><a class="dropdown-item" href="../FLOOR-TILES/kitchen-floor-tile.html">Kitchen Floor Tiles</a></li>
+                                            <li><a class="dropdown-item" href="../FLOOR-TILES/outdoor-floor-tile.html">Outdoor Floor Tiles</a></li>
+                                            <li><a class="dropdown-item" href="../FLOOR-TILES/livingroom-floor-tile.html">Living Floor Tiles</a></li>
+                                            <li><a class="dropdown-item" href="../FLOOR-TILES/bedroom-floor-tile.html">Bedroom Floor Tiles</a></li>
+                                            <li><a class="dropdown-item" href="../FLOOR-TILES/commercialspace-floor-tile.html">Commercial Space Floor Tiles</a></li>
+                                          </ul>
+                                        </li>
+                                        <div class="dropdown-divider"></div>
+                                        <li class="nav-item dropdown">
+                                          <a class="dropdown-item dropdown-toggle" href="../SPECIAL-TILES/special-tile.html"  data-toggle="dropdown">Special Tiles</a>
+                                          <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="../SPECIAL-TILES/grem-free-tile.html">Germ Free Tiles</a></li>
+                                            <li><a class="dropdown-item" href="../SPECIAL-TILES/tac.html">Tac Tiles</a></li>
+                                            <li><a class="dropdown-item" href="../SPECIAL-TILES/Anti-static.html">Anti-Static Tiles</a></li>
+                                            <li><a class="dropdown-item" href="../SPECIAL-TILES/cool-roof.html">Cool-Roof Tiles</a></li>
+                                          </ul>
+                                        </li> 
+                                      </ul>
+                                    </li>
+                                    <li class="nav-item nav-custom"><a class="nav-link " href="#">E-Catalouge</a></li>
+                                    <li class="nav-item nav-custom"><a class="nav-link" href="#">Compare Product</a></li>
+                                    <li class="nav-item nav-custom"><a class="nav-link" href="#">Expert Corner</a></li>
+                                    <li class="nav-item nav-custom"><a class="nav-link" href="../contact-us.html">Contact-us</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>  
+                          </nav>
+                          <script>
+                            $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+                              if (!$(this).next().hasClass('show')) {
+                                $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+                              }
+                              var $subMenu = $(this).next(".dropdown-menu");
+                              $subMenu.toggleClass('show');
+                            
+                            
+                              $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+                                $('.dropdown-submenu .show').removeClass("show");
+                              });
+                              return false;
+                            });
+                            </script>
+
+  <section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center bg-primary h2"><h2>OUTDOOR FLOOR TILES</h2></div>
+             <div class="col-md-3">
+            <div class="card card-custom mb-3">
+                    <img src="../images/floor-tiles/VFT-1616-016-Grey-White-Matt_-Copy.jpg "class="m-2 img"/>
+                    <div class="card-body">
+                        <div class="card-title text-center"><h6 class="bg-warning">
+                           VFT-1616-016-Grey-White-Matt </h6></div>
+                        </div>
+                </div>    
+            </div>
+
+
+        <div class="col-md-3">
+            <div class="card card-custom mb-3">
+                    <img src="../images/floor-tiles/Stonetiles-mov.jpg "class="m-2 img"/>
+                    <div class="card-body">
+                        <div class="card-title text-center"><h6 class="bg-warning">
+                         Stonetiles-mov</h6></div>
+                        </div>
+                </div>    
+            </div>
+
+                <div class="col-md-3">
+            <div class="card card-custom mb-3">
+                    <img src="../images/floor-tiles/8005-copy-3-500x500.jpg "class="m-2 img"/>
+                    <div class="card-body">
+                        <div class="card-title text-center"><h6 class="bg-warning">
+                          8005-copy-3-500x500 </h6></div>
+                        </div>
+                </div>    
+            </div>
+
+
+             <div class="col-md-3">
+            <div class="card card-custom mb-3">
+                    <img src="../images/floor-tiles/outdoor-tiles-1.jpg "class="m-2 img"/>
+                    <div class="card-body">
+                        <div class="card-title text-center"><h6 class="bg-warning">
+                           outdoor-tiles-1</h6></div>
+                        </div>
+                </div>    
+            </div>
+
+
+           <div class="col-md-3">
+            <div class="card card-custom mb-3">
+                    <img src="../images/floor-tiles/HLB1GSqySSzqK1RjSZFjq6zlCFXaE.jpg "class="m-2 img"/>
+                    <div class="card-body">
+                        <div class="card-title text-center"><h6 class="bg-warning">
+                          HLB1GSqySSzqK1RjSZFjq6zlCFXaE</h6></div>
+                </div>    
+            </div>
+            </div>
+
+              <div class="col-md-3">
+            <div class="card card-custom mb-3">
+                    <img src="../images/floor-tiles/VFT-1616-011-Brown-Matt-Copy.jpg "class="m-2 img"/>
+                    <div class="card-body">
+                        <div class="card-title text-center"><h6 class="bg-warning">
+                      VFT-1616-011-Brown-Matt</h6></div>
+                        </div>
+                </div>    
+            </div>
+
+            <div class="col-md-3">
+            <div class="card card-custom mb-3">
+                    <img src="../images/floor-tiles/VFT-1616-013-Ivory-Matt_-Copy.jpg "class="m-2 img"/>
+                    <div class="card-body">
+                        <div class="card-title text-center"><h6 class="bg-warning">
+                          VFT-1616-013-Ivory-Matt </h6></div>
+                        </div>
+                </div>    
+            </div>
+
+             <div class="col-md-3">
+            <div class="card card-custom mb-3">
+                    <img src="../images/floor-tiles/ELT-GP-002-Ivory-Glossy-Random-1-1536x768.jpg "class="m-2 img"/>
+                    <div class="card-body">
+                        <div class="card-title text-center"><h6 class="bg-warning">
+                          ELT-GP-002-Ivory-Glossy </h6></div>
+                        </div>
+                </div>    
+            </div>
+
+        <div class="col-md-3">
+            <div class="card card-custom mb-3">
+                    <img src="../images/floor-tiles/outdoor-flooring_21957.jpg "class="m-2 img"/>
+                    <div class="card-body">
+                        <div class="card-title text-center"><h6 class="bg-warning">
+                           outdoor-flooring_21957</h6></div>
+                        </div>
+                </div>    
+            </div>
+
+            <div class="col-md-3">
+            <div class="card card-custom mb-3">
+                    <img src="../images/floor-tiles/53089_large.jpg "class="m-2 img"/>
+                    <div class="card-body">
+                        <div class="card-title text-center"><h6 class="bg-warning">
+                           53089_large</h6></div>
+                        </div>
+                </div>    
+            </div>
+            
+           <div class="col-md-3">
+            <div class="card card-custom mb-3">
+                    <img src="../images/floor-tiles/cast-structure-outdoor-plus-60x60-4-600x600.jpg "class="m-2 img"/>
+                    <div class="card-body">
+                        <div class="card-title text-center"><h6 class="bg-warning">
+                          cast-structure-outdoor-plus </h6></div>
+                        </div>
+                </div>    
+            </div>
+
+              <div class="col-md-3">
+            <div class="card card-custom mb-3">
+                    <img src="../images/floor-tiles/product-500x500.jpeg "class="m-2 img"/>
+                    <div class="card-body">
+                        <div class="card-title text-center"><h6 class="bg-warning">
+                        product-500x500 </h6></div>
+                        
+           </div>
+      </div>    
+         </div>
+     </div>
+       </div>    
+     </section>
+     </body>
+     </html>          
+
+
+
+
+
+

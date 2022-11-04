@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>germ-free-tile</title>
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootnavbar.css">
+  <link rel="stylesheet" href="../css/custom.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info col-md-12 mt-3 sticky-top">
+    <div class="container-fluid">
+      <div class="row">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link nav-custom" href="../index.html">Home</a></li>
+            <li class="nav-item dropdown nav-custom"> <a class="nav-link dropdown-toggle" href="#"
+                data-toggle="dropdown">Category</a>
+              <ul class="dropdown-menu">
+                <li class="nav-item dropdown"> <a class="dropdown-item dropdown-toggle" href="wall-tile.html"
+                    data-toggle="dropdown">Wall Tiles</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="bathroom-wall-tile.html">Bathroom Wall Tiles</a>
+                    </li>
+                    <li><a class="dropdown-item" href="kitchen-wall-tile.html">Kitchen Wall Tiles</a>
+                    </li>
+                    <li><a class="dropdown-item" href="outdoor-wall-tile.html">Outdoor Wall Tiles</a>
+                    </li>
+                    <li><a class="dropdown-item" href="livingroom-wall-tile.html">Living Wall Tiles</a>
+                    </li>
+                    <li><a class="dropdown-item" href="bedroom-wall-tile.html">Bedroom Wall Tiles</a>
+                    </li>
+                    <li><a class="dropdown-item" href="commercialspace-wall-tile.html">Commercial Space
+                        Wall Tiles</a></li>
+                  </ul>
+                </li>
+                <div class="dropdown-divider"></div>
+                <li class="nav-item dropdown"> <a class="dropdown-item dropdown-toggle" href="floor-tile.html"
+                    data-toggle="dropdown">Floor Tiles</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="bathroom-floor-tile.html">Bathroom Floor
+                        Tiles</a></li>
+                    <li><a class="dropdown-item" href="kitchen-floor-tile.html">Kitchen Floor Tiles</a>
+                    </li>
+                    <li><a class="dropdown-item" href="outdoor-floor-tile.html">Outdoor Floor Tiles</a>
+                    </li>
+                    <li><a class="dropdown-item" href="livingroom-floor-tile.html">Living Floor
+                        Tiles</a></li>
+                    <li><a class="dropdown-item" href="bedroom-floor-tile.html">Bedroom Floor Tiles</a>
+                    </li>
+                    <li><a class="dropdown-item" href="commercialspace-floor-tile.html">Commercial Space
+                        Floor Tiles</a></li>
+                  </ul>
+                </li>
+                <div class="dropdown-divider"></div>
+                <li class="nav-item dropdown"> <a class="dropdown-item dropdown-toggle" href="special-tile.html"
+                    data-toggle="dropdown">Special Tiles</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="germ-free-tile.html">Germ Free Tiles</a></li>
+                    <li><a class="dropdown-item" href="tac.html">Tac Tiles</a></li>
+                    <li><a class="dropdown-item" href="Anti-static.html">Anti-Static Tiles</a></li>
+                    <li><a class="dropdown-item" href="cool-roof.html">Cool-Roof Tiles</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-custom"><a class="nav-link " href="#">E-Catalouge</a></li>
+            <li class="nav-item nav-custom"><a class="nav-link" href="#">Compare Product</a></li>
+            <li class="nav-item nav-custom"><a class="nav-link" href="#">Expert Corner</a></li>
+            <li class="nav-item nav-custom"><a class="nav-link" href="contact-us.html">Contact-us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
+      if (!$(this).next().hasClass('show')) {
+        $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+      }
+      var $subMenu = $(this).next(".dropdown-menu");
+      $subMenu.toggleClass('show');
+
+
+      $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+        $('.dropdown-submenu .show').removeClass("show");
+      });
+      return false;
+    });
+  </script>
+  <!-------------------------------------------navbar------------------------------------------->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <img src="../images/special-tiles/germm.jpg" height="100%" width="100%" />
+        <div class="carousel-caption">
+          <h1 class="hea-2">THE COMPANY WAS FOUNDED IN 1980s</h1>
+          <h3 class="hea-2">CoolRoof Tiles</h3>
+        </div>
+      </div>
+    </div>
+  </div><br>
+
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="text-center text-secondary text-monospace">Germ Free Tiles</h1>
+        <p class="text-justify">Mytiles germ-free tiles are manufactured using an antimicrobial layer that fights
+          against
+          germs, killing 99% of them upon contact. You can install germ-free floor tiles to make your home a safe space.
+          Germ-free tiles are especially used in places such as bathrooms and kitchens which may remain wet for long
+          periods and are prone to germ infestation. These tiles are good for walls too. Germ-free tiles price is in the
+          range of Rs 51-231 per sq. feet. These tiles mostly come in various sizes, including 300x600 mm, 600x600 mm
+          and
+          800x2400 mm. GFT Lina Star White, ODM Alberta (EC) Brown FL, GFT ODP Ebano FT Beige and FT Natural Wood Brown
+          are some of the popular options of germ-free tiles available at Orientbell.</p><b class="text-sans serif">
+          What
+          is the durability of the germ free property once laid in High Traffic zone, like Hospitals, Cafetaria, Eatries
+          etc.?</b>
+        <p> The germ free property is in full upper layer of the tile. Therefore, the germ free property will last the
+          entire life of tile. Even on abrasion and in scratched surfaces, fresh anti-microbial property of the germ
+          free
+          tile will come into effect. So this works as an auto-renewable property and works for you for the entire life
+          of
+          the tile.</p>
+      </div><br>
+      <div class="col-md-6 im-1">
+        <img src="../images/special-tiles/germ4.jpg" class="img-fluid" />
+      </div>
+    </div><br>
+    <!------------------------------------------------------------>
+    <div class="row">
+      <div class="col-md-6 im-3">
+        <img src="../images/special-tiles/germ5.jpg" class="img-fluid" />
+      </div>
+
+      <div class="col-md-6">
+        <h2 class="text-primary text-monospace">Make your home a safe space with Germ Free Tiles:</h2>
+        <p class="text-justify">My germ-free tiles contain photocatalytic nano-particles finely dispersed and embedded
+          in
+          the entire upper layer of the tile surface which helps it fight germ infestation. According to microbiologists
+          and pathological experts, the nanoparticles available in the upper layer of the germ-free tiles get attached
+          to
+          the surface of germs like bacteria and viruses and kill them. This makes their growth and multiplication
+          impossible.
+          These are very strong and can withstand daily impact and abrasion. Germ-free tiles are resistant to stains,
+          scratches, water, acids and chemicals. You can go with your favourite colour to cover an entire area or
+          combine
+          different coloured tiles creatively.
+          There are many varieties available within the germ-free tiles range.
+          Germ-free floor and wall tiles can be used at various places such as the living room, bedroom, office and
+          schools. They are especially recommended for bathrooms, kitchens, hospitals and clinical labs, places where
+          there is high likelihood of germs’ growth. Further, germ-free tiles price is within reach. There are cheaper
+          as
+          well as slightly expensive options and you can choose the one that suits your budget.</p>
+      </div>
+    </div><br>
+    <!------------------------------------------------------------------>
+    <div class="row">
+      <div class="col md 6">
+        <h2 class="text-monospace text-info">Advantages Of Germ Free Tiles</h2><br>
+        <li>Kills a wide range of microbes by over 99% as per standards test and protocol.</li><br>
+        <li>Innovation and research have helped us in develop germ shield tiles that are “fired-in” and glazed with
+          materials that make it restrict germ build-up and growth on surfaces.</li><br>
+        <li>When we plan to build our home, we want everything to be good. We take care of all standpoints, including
+          the
+          level of hygiene that will have to be maintained in certain areas of the house.</li><br>
+        <li>Unlike a coating, remains a permanent characteristic.</li><br>
+        <li>Realising that everyone walks on it, brings all kinds of dirt and germs with them into the house, and often
+          spill things on the floor is enough to make you uneasy.</li><br>
+        <li>This is especially unsettling when you have children and elderly in your home, and think about how all this
+          can affect their health.</li><br>
+      </div>
+
+      <div class="col-md-6 im-3">
+        <img src="../images/special-tiles/germ.jpg" class="img-fluid" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 im-1">
+        <img src="../images/special-tiles/gerrm.jpg" class="img-fluid" />
+      </div>
+
+      <div class="col-md-6">
+        <h2 class="text-monospace text-primary">Working of Johnson Germ Free Tiles</h2>
+        <p class="text-sans sarif text-justify">The patented compound is a part of the glaze; it becomes part of tile
+          (unlike coating) and permanent in feature. The silver ions in requisite quantities are released on the surface
+          and action begins!<br><br>
+          The active silver ions are homogeneously surface matrix of the tiles or sanitaryware.<br><br>
+          These active silver ions migrate to the surface & kill the bacteria on the surface of the tiles or
+          sanitaryware
+          by puncturing their cell membrane.<br><br>
+          As the silver ions present on the surface of the germ free tiles kills a major part of microbes and bacteria,
+          your living space becomes a safe-to-touch place for toddlers and little kids at your home and lowers the
+          chances
+          of falling ill.<br><br> With hospitals being the crucial place for hygiene and health, we strongly suggest
+          that
+          the emerging hospitals and clinics should consider using Johnson’s patented germ-free tiles for flooring
+          options
+          and even as wall tiles for their hospitals to protect the public.</p>
+      </div><br><br>
+
+      <!----------------------------------------------------->
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../images/special-tiles/samg2.png" class="myborder img-fluid" />
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="text-center alert-info">Germ free grey dtd</h3>
+                <p>$3.46-$3.95. / square meter. 3000.0 square meters.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../images/special-tiles/samg1.jpg" class="myborder" />
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="text-center alert-info">Germ free brown ls</h3>
+                <p>$6.16-$4.55. / square meter. 3000.0 square meters.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 ">
+          <div class="card ">
+            <img src="../images/special-tiles/samg3.jpg" class="myborder" />
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="text-center alert-info">Germ free white pn</h3>
+                <p>$9.82-$1.25. / square meter. 3000.0 square meters.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../images/special-tiles/samg7.png" class="myborder" />
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="text-center alert-info">Germ free blue crystal</h3>
+                <p>$6.04-$1.95. / square meter. 3000.0 square meters.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../images/special-tiles/samg5.jpg" class="myborder" />
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="text-center alert-info">Germ free dark dt</h3>
+                <p>$3.66-$3.95. / square meter. 3000.0 square meters.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../images/special-tiles/samg6.jpg" class="myborder" />
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="text-center alert-info">Germ free blk dtd</h3>
+                <p>$3.45-$2.55. / square meter. 3000.0 square meters.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+
+  <!------------------------------------footer---------------------------------------------->
+  <footer class="bg-dark text-wgite pt-5 pb-4">
+    <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left">
+        <div class="col-md-3 col-lg-3 col-xl-3 mr-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">CERA</h5>
+          <p class="text-white">It’s a story of three decades, more than a quarter of a century. It’s a tale of a dream
+            realized against all odds.</p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mr-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">PRODUCTS</h5>
+          <p>
+            <a href="floor-tile.html" class="text-white">FLOOR TILES</a>
+          </p>
+          <p>
+            <a href="wall-tile.html" class="text-white">WALL TILES</a>
+          </p>
+          <p>
+            <a href="special-tile.html" class="text-white">SPECIAL TILE</a>
+          </p>
+          <p>
+            <a href="" class="text-white">E-catalouge</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mr-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">USEFUL LINKS</h5>
+          <p>
+            <a href="" class="text-white">Tile Calculator</a>
+          </p>
+          <p>
+            <a href="" class="text-white">Product comprasion</a>
+          </p>
+          <p>
+            <a href="contact-us.html" class="text-white">Location</a>
+          </p>
+          <p>
+            <a href="" class="text-white">Help</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mr-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+          <p>
+            <i class="fas fa-home mr-3 text-white"></i><span class="text-white">Dha phasev, karachi
+              Pakistan</span><br><br>
+            <i class="fas fa-envelope mr-3 text-white"></i><span class="text-white">theceratile@gmail.Com</span><br><br>
+            <i class="fas fa-phone mr-3 text-white"></i><span class="text-white">+92 3162859445</span><br><br>
+            <i class="fas fa-print mr-3 text-white"></i><span class="text-white"> +01 335 633 77</span><br><br>
+          </p>
+        </div>
+        <div class="col-md-6 footer-social">
+          <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instgram.com"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+                      <!-- navbar -->
+                      <nav class="navbar navbar-expand-lg navbar-dark bg-info col-md-12 mt-3" >
+                        <div class="container-fluid">
+                          <div class="row">
+                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                  <li class="nav-item"><a class="nav-link nav-custom" href="index.html">Home</a></li>
+                                  <li class="nav-item dropdown nav-custom">
+                                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Category</a>
+                                    <ul class="dropdown-menu">
+                                      <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="subpages/WALL-TILES/wall-tile.html"  data-toggle="dropdown">Wall Tiles</a>
+                                        <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="subpages/WALL-TILES/bathroom-wall-tile.html">Bathroom Wall Tiles</a></li>
+                                          <li><a class="dropdown-item" href="subpages/WALL-TILES/kitchen-wall-tile.html">Kitchen Wall Tiles</a></li>
+                                          <li><a class="dropdown-item" href="subpages/WALL-TILES/kitchen-wall-tile.html">Outdoor Wall Tiles</a></li>
+                                          <li><a class="dropdown-item" href="subpages/WALL-TILES/outdoor-wall-tile.html">Living Wall Tiles</a></li>
+                                          <li><a class="dropdown-item" href="subpages/WALL-TILES/livingroom-wall-tile.html">Bedroom Wall Tiles</a></li>
+                                          <li><a class="dropdown-item" href="subpages/WALL-TILES/commercialspace-wall-tile.html">Commercial Space Wall Tiles</a></li>
+                                        </ul>
+                                      </li>
+                                      <div class="dropdown-divider"></div>
+                                        <li class="nav-item dropdown">
+                                          <a class="dropdown-item dropdown-toggle" href="subpages/FLOOR-TILES/floor-tile.html"  data-toggle="dropdown">Floor Tiles</a>
+                                          <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="subpages/FLOOR-TILES/bathroom-floor-tile.html">Bathroom Floor Tiles</a></li>
+                                            <li><a class="dropdown-item" href="subpages/FLOOR-TILES/kitchen-floor-tile.html">Kitchen Floor Tiles</a></li>
+                                            <li><a class="dropdown-item" href="subpages/FLOOR-TILES/outdoor-floor-tile.html">Outdoor Floor Tiles</a></li>
+                                            <li><a class="dropdown-item" href="subpages/FLOOR-TILES/livingroom-floor-tile.html">Living Floor Tiles</a></li>
+                                            <li><a class="dropdown-item" href="subpages/FLOOR-TILES/bedroom-floor-tile.html">Bedroom Floor Tiles</a></li>
+                                            <li><a class="dropdown-item" href="subpages/FLOOR-TILES/commercialspace-floor-tile.html">Commercial Space Floor Tiles</a></li>
+                                          </ul>
+                                        </li>
+                                        <div class="dropdown-divider"></div>
+                                        <li class="nav-item dropdown">
+                                          <a class="dropdown-item dropdown-toggle" href="subpages/SPECIAL-TILES/special-tile.html"  data-toggle="dropdown">Special Tiles</a>
+                                          <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="subpages/SPECIAL-TILES/grem-free-tile.html">Germ Free Tiles</a></li>
+                                            <li><a class="dropdown-item" href="subpages/SPECIAL-TILES/tac.html">Tac Tiles</a></li>
+                                            <li><a class="dropdown-item" href="subpages/SPECIAL-TILES/Anti-static.html">Anti-Static Tiles</a></li>
+                                            <li><a class="dropdown-item" href="subpages/SPECIAL-TILES/cool-roof.html">Cool-Roof Tiles</a></li>
+                                          </ul>
+                                        </li> 
+                                      </ul>
+                                    </li>
+                                    <li class="nav-item nav-custom"><a class="nav-link " href="#">E-Catalouge</a></li>
+                                    <li class="nav-item nav-custom"><a class="nav-link" href="#">Compare Product</a></li>
+                                    <li class="nav-item nav-custom"><a class="nav-link" href="#">Expert Corner</a></li>
+                                    <li class="nav-item nav-custom"><a class="nav-link" href="subpages/contact-us.html">Contact-us</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>  
+                          </nav>
+                          <script>
+                            $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+                              if (!$(this).next().hasClass('show')) {
+                                $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+                              }
+                              var $subMenu = $(this).next(".dropdown-menu");
+                              $subMenu.toggleClass('show');
+                            
+                            
+                              $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+                                $('.dropdown-submenu .show').removeClass("show");
+                              });
+                              return false;
+                            });
+                            </script>

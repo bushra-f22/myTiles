@@ -1,0 +1,52 @@
+
+  
+#clear{  
+width: 280px;  
+border: 3px solid gray;  
+ border-radius: 3px;  
+ padding: 20px;  
+ background-color:#E35A78;  
+}  
+  
+  
+.btns  
+{  
+width: 20px;  
+background-color:#34A099 ;  
+color: white;  
+border: 3px solid gray;  
+    border-radius: 5px;  
+    padding: 26px;  
+    margin: 5px;  
+    font-size: 15px;  
+}  
+  
+   
+.btns2  
+{  
+width: 20px;  
+background-color:#34A099 ;  
+color: white;  
+border: 3px solid gray;  
+    border-radius: 5px;  
+    padding: 26px;  
+    margin: 5px;  
+    font-size: 20px;  
+}  
+
+#calc{  
+width: 280px;  
+border: 3px solid purple ;  
+    border-radius: 3px;  
+    padding: 20px;  
+    margin:auto;
+} 
+
+#txt
+{
+	width: 280px;  
+  border: 3px solid purple ;  
+    border-radius: 3px;  
+    padding: 20px;  
+    margin:auto;
+} 

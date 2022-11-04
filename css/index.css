@@ -1,0 +1,86 @@
+a
+{
+    text-decoration: none;
+}
+.card-custom
+{
+    overflow:hidden;
+}
+.box
+{
+    width:300px;
+    position: relative;
+    transform: rotate(-45deg);
+}
+.box img
+{
+    width:100%;
+    height: auto;
+    box-sizing: border-box;
+    display: block;
+    transform: rotate(-45deg);
+    border:2px solid black;
+    border-radius: 50px;
+    transition: all 2s ease;
+    transform: scale(1);
+  
+}
+.box:hover img
+{
+    transform: scale(0);
+   
+}
+.content
+{
+    border: 2px solid black;
+    border-radius: 50px;
+    position: absolute;
+    top:0;
+    left:0;
+    width:300px;
+    height:300px;
+    padding: 15px;
+    background-color:rgba(250, 250, 250, 0.5);
+    text-align: justify;
+    box-sizing: border-box;
+    transform:scale(0) rotate(-180deg);
+    transition: all 1s ease ;
+    z-index:2;
+}
+.box:hover .content
+{
+    transform: scale(1) rotate(0);
+    transition-delay: 0.7s;
+}
+
+.calculate
+{
+    background:url("../images/how-to-calculate.png") no-repeat; 
+    opacity:0.8;
+    height:225px;
+}
+
+.Compare
+{
+    background:url("../images/compare-product.png") no-repeat; 
+    opacity:0.8;
+    height:225px;
+}
+.calculate h4, .Compare h4
+{
+    margin-top:100px;
+    font-size:xx-large;
+   
+    text-align: center;
+    width:80%;
+}
+.calculate h4 a, .Compare h4 a
+{
+    text-decoration: none;
+    color:black;
+}
+.calculate h4:hover, .Compare h4:hover
+{
+background-color: rgba(253, 207, 146, 0.637);
+color:white;
+}

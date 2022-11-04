@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>anti-static</title>
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootnavbar.css">
+  <link rel="stylesheet" href="../css/custom.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-info col-md-12 mt-3 sticky-top">
+  <div class="container-fluid">
+    <div class="row">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link nav-custom" href="../index.html">Home</a></li>
+          <li class="nav-item dropdown nav-custom"> <a class="nav-link dropdown-toggle" href="#"
+              data-toggle="dropdown">Category</a>
+            <ul class="dropdown-menu">
+              <li class="nav-item dropdown"> <a class="dropdown-item dropdown-toggle" href="wall-tile.html"
+                  data-toggle="dropdown">Wall Tiles</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="bathroom-wall-tile.html">Bathroom Wall Tiles</a>
+                  </li>
+                  <li><a class="dropdown-item" href="kitchen-wall-tile.html">Kitchen Wall Tiles</a>
+                  </li>
+                  <li><a class="dropdown-item" href="outdoor-wall-tile.html">Outdoor Wall Tiles</a>
+                  </li>
+                  <li><a class="dropdown-item" href="livingroom-wall-tile.html">Living Wall Tiles</a>
+                  </li>
+                  <li><a class="dropdown-item" href="bedroom-wall-tile.html">Bedroom Wall Tiles</a>
+                  </li>
+                  <li><a class="dropdown-item" href="commercialspace-wall-tile.html">Commercial Space
+                      Wall Tiles</a></li>
+                </ul>
+              </li>
+              <div class="dropdown-divider"></div>
+              <li class="nav-item dropdown"> <a class="dropdown-item dropdown-toggle" href="floor-tile.html"
+                  data-toggle="dropdown">Floor Tiles</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="bathroom-floor-tile.html">Bathroom Floor
+                      Tiles</a></li>
+                  <li><a class="dropdown-item" href="kitchen-floor-tile.html">Kitchen Floor Tiles</a>
+                  </li>
+                  <li><a class="dropdown-item" href="outdoor-floor-tile.html">Outdoor Floor Tiles</a>
+                  </li>
+                  <li><a class="dropdown-item" href="livingroom-floor-tile.html">Living Floor
+                      Tiles</a></li>
+                  <li><a class="dropdown-item" href="bedroom-floor-tile.html">Bedroom Floor Tiles</a>
+                  </li>
+                  <li><a class="dropdown-item" href="commercialspace-floor-tile.html">Commercial Space
+                      Floor Tiles</a></li>
+                </ul>
+              </li>
+              <div class="dropdown-divider"></div>
+              <li class="nav-item dropdown"> <a class="dropdown-item dropdown-toggle" href="special-tile.html"
+                  data-toggle="dropdown">Special Tiles</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="germ-free-tile.html">Germ Free Tiles</a></li>
+                  <li><a class="dropdown-item" href="tac.html">Tac Tiles</a></li>
+                  <li><a class="dropdown-item" href="Anti-static.html">Anti-Static Tiles</a></li>
+                  <li><a class="dropdown-item" href="cool-roof.html">Cool-Roof Tiles</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item nav-custom"><a class="nav-link " href="#">E-Catalouge</a></li>
+          <li class="nav-item nav-custom"><a class="nav-link" href="#">Compare Product</a></li>
+          <li class="nav-item nav-custom"><a class="nav-link" href="#">Expert Corner</a></li>
+          <li class="nav-item nav-custom"><a class="nav-link" href="contact-us.html">Contact-us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<script>
+  $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
+    if (!$(this).next().hasClass('show')) {
+      $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+    }
+    var $subMenu = $(this).next(".dropdown-menu");
+    $subMenu.toggleClass('show');
+
+
+    $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+      $('.dropdown-submenu .show').removeClass("show");
+    });
+    return false;
+  });
+</script>
+<!--------------------------------navbar---------------------------------->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <img src="../images/special-tiles/tac home.jpg" height="100%" width="100%" />
+    </div>
+  </div>
+  <div class="jumbotron">
+    <div class="col-md-12">
+      <h1 class="text-center text-info">ANTI STATIC TILES</h1>
+      <b>INTRODUCTION:</b>
+      <p class="text-justify">My Tiles Ltd is a professional company engaged in designing, researching, producing,
+        selling and installing various series of anti-static floors, all-steel OA network floors, against static
+        electricity PVC floors and ventilation quantity all-steel ventilated floors.
+        Our company has passed ISO9001 International Quality System Certification and ISO14001 Environment System
+        Certification. Series of products of anti-static floors produced by the company are up to the notch of the US
+        CISCA, the EU CE Certification, the UK MOB Standards and the SJ/T10796-2001 National Standards.
+        The testing of indicators of the products have all reached or exceeded relevant international standards.
+        The company is constantly developing new products and improving product quality, which has the production
+        capacity of more than 1,500,000 squares annually. It also has advanced production equipment, mature production
+        technology, and the team of research and development, producing, selling, and installing with strong technical.
+        The appearance of products is pretty and the quality is stable, which are sold to more than eighty countries and
+        regions such as Japan, Singapore, Malaysia, Taiwan, Middle East, as well as the domestic room decoration
+        companies, purification companies and real estate developers, and the products are well receed by all customers.
+        The company is in line with the purport of quality first, credit first, customer satisfaction first, making
+        continuous innovation, being brave in developing the operation principle, and creating greater value for
+        partners at home and abroad.
+      </p>
+    </div>
+    <!------------------------------paragraph----------------------------------------->
+
+    <div class="row">
+      <div class="col-md-4 img-2">
+        <div class="card">
+          <img src="../images/special-tiles/anti.jpg" />
+          <div class="card-body">
+            <div class="card-title">
+              <h2>ANTI STATIC FLOOR PANEL</h2>
+            </div>
+            <div class="card-text">
+              <p>The antistatic sites including computer room,program-controlled computer room,electrical engineering
+                jobsite and aerospace workplace. Combined with all steel and characteristic of high bearing strength,it
+                can retard inflaming and resist comuption. With antistatic index of 1×106-1×1010,it is good in electric
+                conductivity,resistant to pollution,easy to wash and good in decorative effect.</p>
+            </div>
+          </div>
+        </div><br>
+      </div>
+
+      <!----------C2--------->
+      <div class="col-md-4 img-2">
+        <div class="card">
+          <img src="../images/special-tiles/ven.anti.jpg" />
+          <div class="card-body">
+            <div class="card-title">
+              <h2>VENTILATED FLOOR PANEL</h2>
+            </div>
+            <div class="card-text">
+              <p>The combination of ventilated floor is similar to that of the antistatic all steel floor in
+                structure,but its enclosed space is of no foarming filler. There are punched vents on the upper and
+                lower steel plates of the floor as well as on the veneer.The ventilated floor used with the all-steel
+                access floor is applicable to the sites with ventilaftion requirements for the undermeath of loor.The
+                ventilation rate of floor is 20%~45%.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--------C3----->
+      <div class="col-md-4 img-2">
+        <div class="card">
+          <img src="../images/special-tiles/flotted.jpg" />
+          <div class="card-body">
+            <div class="card-title">
+              <h2>ANTI SLOTTED PANEL SERIES</h2>
+            </div>
+            <div class="card-text">
+              <p>Strong in carrying capacity and good in fire prevention corrosion resistance due to al-steel
+                combination and compression molding forming. Good in interchangeabilty,easy to assemble and fast to
+                repair because modular design. Strong in carrying capacity and good in fire prevention and corrosion
+                resistance due to al-steel combination and compression. The wiring-slot cover for the molded floor can
+                facilitate the integrated wring. </p>
+            </div>
+          </div>
+        </div>
+      </div><br><br>
+      <!-----------------------frst---------------------->
+      <div class="row">
+        <div class="col-md-6">
+          <img src="../images/special-tiles/anti1.jpg" class="img-fluid" />
+        </div>
+
+        <div class="col-md-6">
+          <h2 class="text-primary text-monospace">What is anti-static flooring, when and why you should use it?</h2>
+          <p>Did you know that there is anti-static flooring? Characteristics like this one allow us to invest in a safe
+            and comfortable space, where we can feel at ease. Choosing the right flooring is a difficult task, but you
+            should keep in mind not only the colour or the material you are selecting but also the technical features
+            like...</p><br />
+          <b> Do you feel that during the dry months of winter there is too much static electricity? Anti-static
+            flooring is perfect for you but, will you find the design you need for your office?</b>
+          <p> Thanks to the versatility of vinyl flooring, there is a wide range of products where to choose from. This
+            material can give you the natural look of wood, but also the softness of carpet flooring. Whatever design
+            you might need, you will find it. </p>
+        </div>
+      </div><br><br>
+      <!------------------------sec--------------------------->
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="text-center text-monospace text-info">Why choosing anti-static flooring is a good idea?</h2>
+          <img src="../images/special-tiles/antii.jpg" class="img-fluid" />
+          <p class="text-justify">As experts in technology and flooring, we know that most industries and big companies
+            need to install anti-static flooring in their facilities. How can you benefit from doing so? Here you will
+            find all the advantages that you will get from it.can be quite dangerous since it can provoke fires and
+            explosions when there is an excess of static electricity.
+            Keeping your workers safe is just as easy as installing anti-static flooring. Keeping your floor clean is
+            essential to help to prevent the charge of static electricity. Dirt can harm the special features of these
+            types of flooring and damages its anti-static properties. So, cleaning seems to be an issue.</p><br>
+        </div>
+
+        <div class="col-md-6">
+          <h2 class="text-center text-monospace text-secondary">What types of anti-static floors are there?</h2>
+          <p class="text-justify">In L’Antic Colonial we aim to provide as much variety as possible, having quality and
+            technology as our greatest values. Because of that, we can offer you a wide line of anti-static flooring
+            that will adapt to any surface and decoration:
+            Linkfloor Authentic: simulates the texture and properties of natural wood for a natural and cosy
+            environment.
+            Linkfloor Eco: for an industrial and modern look, we recommend you this collection, which recreates the
+            aesthetic of concrete flooring. Linkfloor Grain: braided material which gives a warm sensation on the feet.
+            Ideal for creating a warm atmosphere in your home. Apart from these, there are more collections in our
+            catalogues that are waiting to be discovered. We encourage you to keep exploring our interactive catalogue
+            to find the perfect anti-static flooring for you.</p><br><br>
+
+          <img src="../images/special-tiles/antii4.jpg" class="img-fluid" />
+        </div>
+      </div> <br><br>
+
+      <!----------------------------------------------->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../images/special-tiles/sample1.jpg" class="myborder img-fluid" />
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="text-center alert-info">Anti static conductive ls.grey </h3>
+                <p>$3.46-$3.95. / square meter. 3000.0 square meters.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../images/special-tiles/sample2.jpg" class="myborder img-fluid" />
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="text-center alert-info">Anti static conductive grey dk</h3>
+                <p>$4.16-$4.65. / square meter. 3000.0 square meters.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="../images/special-tiles/sample4.jpg" class="myborder img-fluid" />
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="text-center alert-info">Anti static conductive white</h3>
+                <p>$3.46-$3.95. / square meter. 3000.0 square meters.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 ">
+          <div class="card">
+            <img src="../images/special-tiles/sample5.jpg" class="myborder img-fluid" />
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="text-center alert-info">Anti static conductive lb dot</h3>
+                <p>$2.48-$3.94. / square meter. 3000.0 square meters.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../images/special-tiles/sample6.jpg" class="myborder img-fluid" />
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="text-center alert-info">Anti static conductive blue dk</h3>
+                <p>$4.41-$3.75. / square meter. 3000.0 square meters.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../images/special-tiles/sample3.jpg" class="myborder img-fluid" />
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="text-center alert-info">Anti static conductive black </h3>
+                <p>$8.43-$3.93. / square meter. 3000.0 square meters.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+  <!------------------------------------footer---------------------------------------------->
+  <footer class="bg-dark text-wgite pt-5 pb-4">
+    <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left">
+        <div class="col-md-3 col-lg-3 col-xl-3 mr-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">CERA</h5>
+          <p class="text-white">It’s a story of three decades, more than a quarter of a century. It’s a tale of a dream
+            realized against all odds.</p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mr-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">PRODUCTS</h5>
+          <p>
+            <a href="floor-tile.html" class="text-white">FLOOR TILES</a>
+          </p>
+          <p>
+            <a href="wall-tile.html" class="text-white">WALL TILES</a>
+          </p>
+          <p>
+            <a href="special-tile.html" class="text-white">SPECIAL TILE</a>
+          </p>
+          <p>
+            <a href="" class="text-white">E-catalouge</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mr-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">USEFUL LINKS</h5>
+          <p>
+            <a href="" class="text-white">Tile Calculator</a>
+          </p>
+          <p>
+            <a href="" class="text-white">Product comprasion</a>
+          </p>
+          <p>
+            <a href="contact-us.html" class="text-white">Location</a>
+          </p>
+          <p>
+            <a href="" class="text-white">Help</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mr-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+          <p>
+            <i class="fas fa-home mr-3 text-white"></i><span class="text-white">Dha phasev, karachi
+              Pakistan</span><br><br>
+            <i class="fas fa-envelope mr-3 text-white"></i><span class="text-white">theceratile@gmail.Com</span><br><br>
+            <i class="fas fa-phone mr-3 text-white"></i><span class="text-white">+92 3162859445</span><br><br>
+            <i class="fas fa-print mr-3 text-white"></i><span class="text-white"> +01 335 633 77</span><br><br>
+          </p>
+        </div>
+        <div class="col-md-6 footer-social">
+          <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instgram.com"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool-Roof</title>
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootnavbar.css">
+  <link rel="stylesheet" href="../css/custom.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-info col-md-12 mt-3 sticky-top">
+  <div class="container-fluid">
+    <div class="row">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link nav-custom" href="../index.html">Home</a></li>
+          <li class="nav-item dropdown nav-custom"> <a class="nav-link dropdown-toggle" href="#"
+              data-toggle="dropdown">Category</a>
+            <ul class="dropdown-menu">
+              <li class="nav-item dropdown"> <a class="dropdown-item dropdown-toggle" href="wall-tile.html"
+                  data-toggle="dropdown">Wall Tiles</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="bathroom-wall-tile.html">Bathroom Wall Tiles</a>
+                  </li>
+                  <li><a class="dropdown-item" href="kitchen-wall-tile.html">Kitchen Wall Tiles</a>
+                  </li>
+                  <li><a class="dropdown-item" href="outdoor-wall-tile.html">Outdoor Wall Tiles</a>
+                  </li>
+                  <li><a class="dropdown-item" href="livingroom-wall-tile.html">Living Wall Tiles</a>
+                  </li>
+                  <li><a class="dropdown-item" href="bedroom-wall-tile.html">Bedroom Wall Tiles</a>
+                  </li>
+                  <li><a class="dropdown-item" href="commercialspace-wall-tile.html">Commercial Space
+                      Wall Tiles</a></li>
+                </ul>
+              </li>
+              <div class="dropdown-divider"></div>
+              <li class="nav-item dropdown"> <a class="dropdown-item dropdown-toggle" href="floor-tile.html"
+                  data-toggle="dropdown">Floor Tiles</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="bathroom-floor-tile.html">Bathroom Floor
+                      Tiles</a></li>
+                  <li><a class="dropdown-item" href="kitchen-floor-tile.html">Kitchen Floor Tiles</a>
+                  </li>
+                  <li><a class="dropdown-item" href="outdoor-floor-tile.html">Outdoor Floor Tiles</a>
+                  </li>
+                  <li><a class="dropdown-item" href="livingroom-floor-tile.html">Living Floor
+                      Tiles</a></li>
+                  <li><a class="dropdown-item" href="bedroom-floor-tile.html">Bedroom Floor Tiles</a>
+                  </li>
+                  <li><a class="dropdown-item" href="commercialspace-floor-tile.html">Commercial Space
+                      Floor Tiles</a></li>
+                </ul>
+              </li>
+              <div class="dropdown-divider"></div>
+              <li class="nav-item dropdown"> <a class="dropdown-item dropdown-toggle" href="special-tile.html"
+                  data-toggle="dropdown">Special Tiles</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="germ-free-tile.html">Germ Free Tiles</a></li>
+                  <li><a class="dropdown-item" href="tac.html">Tac Tiles</a></li>
+                  <li><a class="dropdown-item" href="Anti-static.html">Anti-Static Tiles</a></li>
+                  <li><a class="dropdown-item" href="cool-roof.html">Cool-Roof Tiles</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item nav-custom"><a class="nav-link " href="#">E-Catalouge</a></li>
+          <li class="nav-item nav-custom"><a class="nav-link" href="#">Compare Product</a></li>
+          <li class="nav-item nav-custom"><a class="nav-link" href="#">Expert Corner</a></li>
+          <li class="nav-item nav-custom"><a class="nav-link" href="contact-us.html">Contact-us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<script>
+  $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
+    if (!$(this).next().hasClass('show')) {
+      $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+    }
+    var $subMenu = $(this).next(".dropdown-menu");
+    $subMenu.toggleClass('show');
+
+
+    $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+      $('.dropdown-submenu .show').removeClass("show");
+    });
+    return false;
+  });
+</script>
+<!-------------------------------Navbar------------------------>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <img src="../images/special-tiles/coolhome.jpg" height="100%" width="100%" />
+      <div class="carousel-caption">
+        <h1 class="hea-1">THE COMPANY WAS FOUNDED IN 1980s</h1>
+        <h3 class="hea-1">CoolRoof Tiles</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="text-center text-secondary text-monospace">Cool Roof Tiles</h1>
+        <p class="text-justify">Innovation and technical superiority are the building blocks of our Production process.
+          Our expert research and development team devised a process called glazing to craft cool roof and wall tiles.
+          Johnson Endura Cool Roof Tiles help lower inside temperature by 10 to 15% to improve indoor comfort.
+          U. S. Green Building Council’s LEED 2.2 uses SRI (Solar Reflective Index) as an effective way to evaluate the
+          surface’s capacity to reflect solar heat. Johnson Endura Cool Roof Tiles, duly accredited by LEED, have SRI
+          value of more than 90 against the required benchmark of 78. My tiles Cool roof and wall tiles reflect
+          substantial solar heat and help maintain lower temperature below the roof. By reducing the cooling
+          requirement, solar reflective tiles significantly reduce power consumption and allow substantial energy
+          savings.
+          Our cool roof tiles range is also equipped with other essential features like high traction and slip
+          resistance to ensure safety. Since solar reflective tiles are also characterized by moisture resistance, it
+          further enhances the functionality of the tiles.
+          Contribute your bit towards environmental by acting responsibly, installing cool roof tiles on your property
+          would reduce global warming and help save the ozone layer. The germ free property is in full upper layer of
+          the tile. Therefore, the germ free property will last the entire life of tile. Even on abrasion and in
+          scratched surfaces, fresh anti-microbial property of the germ free tile will come into effect. So this works
+          as an auto-renewable property and works for you for the entire life of the tile.</p>
+      </div><br>
+      <div class="col-md-6 cool-1">
+        <img src="../images/special-tiles/cool2.jpg" class="img-fluid" />
+      </div>
+    </div><br>
+    <!------------------------------------------------------------>
+    <div class="row">
+      <div class="col-md-6 cool-1">
+        <img src="../images/special-tiles/cool.jpg" class="img-fluid" />
+      </div>
+
+      <div class="col-md-6">
+        <h2 class="text-info text-monospace">Heat Resistant Cool Roof Tiles Design</h2>
+        <p class="text-justify">Heat Resistant Cool Roof Tiles Design
+          Cool tiles are designed with accuracy to ensure that they bring down the temperature inside any building in
+          hot climes. Floor cooling tiles are perfect for hot and tropical climates. These tiles will ensure any room
+          doesn’t get overheated as they do not let heat conduction through the roofs. That’s why they are, typically,
+          installed on the roofs. Cool roof tiles are something you should go for if you want to prevent heat transfer
+          from the roof to your house. Cooling tiles for the terrace are the best options for terraces and balconies
+          with rooms below. Cool roof tiles come with a glazed coating of zirconium oxide, alumina silicate, or
+          zirconium silicate, chemicals and compounds that do not let heat get transferred. These materials absorb less
+          heat and shoot them back into the atmosphere, which is why they are most suited for terraces, pavements and
+          even open balconies. White cooling tiles are one of the best options in the cool tiles category. Always
+          crafted from the highest quality, Orientbell Tiles’ range of cool roof tiles score 98 on the Solar Reflective
+          Index, something that you won’t find anywhere in the world..Floor cooling tiles are what you need for your
+          roof.
+          Spaces where you can use Cool Tiles.</p>
+        <li>Cool roof tiles.</li>
+        <li>Cooling tiles for terrace.</li>
+      </div>
+    </div><br>
+    <!------------------------------------------------------------------>
+    <div class="row">
+      <div class="col md 6">
+        <h2 class="text-monospace text-info">How Much Can I Save?</h2>
+        <p class="text-justify">Savings vary depending on things like location and available natural shade. However,
+          studies suggest that cool roofs can lead to a 40 percent reduction in cooling costs compared to standard
+          “dark” roofing. These savings mean that a new roof or coating could pay for itself in six years or
+          less.<br><br>
+
+          How much does cool roofing cost? According to the EPA, reflective shingles may be the same price as premium
+          standard shingles and between $0.10 and $0.20 more per square foot than regular mid-priced shingles. The
+          paint-on, reflective thermal coatings cost about $0.75 to $1.50 per square foot, while cool roof membrane
+          coverings range between $1.50 and $3.00 per square foot. The EPA also cited a study in California that
+          estimated cool roofing saved an average of $0.50 per square foot per year. With these savings, even the most
+          expensive cool roof membrane option will pay for itself in six years.</p><br>
+      </div>
+
+      <div class="col-md-6 ">
+        <h2 class="text-monospace text-info">Advantages & Disadvantages Of Cool Roofs</h2>
+        <p class="text-justify">Cool roofs provide protection from solar heat gain in warm climates or on sizzling
+          summer days. This innovative roofing is designed to reflect the sunlight from a building rather than absorb
+          the heat and allow it to permeate the structure below. In the past, homeowners relied on white roofing for
+          reflecting the sun’s rays.<br><br>
+
+          While lighter colors are much better for reflection, new technology and modern design allow for more
+          richly-colored roofing materials with the same reflective properties. This means that homeowners can now enjoy
+          the benefits of cool roofs without having to sacrifice aesthetics.<br><br>
+
+          Certain reflective shingles or tiles can provide these cooling properties, as can paint-like thermal coatings
+          and sheet-like coverings. The best type of material for your rooftop depends on:<br>
+
+          <li>The degree of reflectivity desired.</li>
+          <li>Other heat conducting factors.</li>
+          <li>Overall project budget.</li><br>
+          Below are some tips to help you take advantage of cool roofs.
+      </div>
+    </div><br><br>
+
+    <div class="row">
+      <div class="col-md-6 cool-1">
+        <img src="../images/special-tiles/cool1.jpg" class="img-fluid" />
+      </div>
+
+      <div class="col-md-6">
+        <h2 class="text-monospace text-primary">Working of Johnson Germ Free Tiles</h2>
+        <p class="text-sans sarif text-justify">The patented compound is a part of the glaze; it becomes part of tile
+          (unlike coating) and permanent in feature. The silver ions in requisite quantities are released on the surface
+          and action begins!<br><br>
+          The active silver ions are homogeneously distributed throughout the surface matrix of the tiles or
+          sanitaryware.<br><br>
+          These active silver ions migrate to the surface & kill the bacteria on the surface of the tiles or
+          sanitaryware by puncturing their cell membrane.<br><br>
+          As the silver ions present on the surface of the germ free tiles kills a major part of microbes and bacteria,
+          your living space becomes a safe-to-touch place for toddlers and little kids at your home and lowers the
+          chances of falling ill.<br><br> With hospitals being the crucial place for hygiene and health, we strongly
+          suggest that the emerging hospitals and clinics should consider using Johnson’s patented germ-free tiles for
+          flooring options and even as wall tiles for their hospitals to protect the public.</p>
+      </div>
+    </div><br>
+
+    <!----------------------------------------------------->
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="../images/special-tiles/cools.jpg" class="myborder" />
+          <div class="card-body">
+            <div class="card-title">
+              <h4 class="text-center alert-info">CoolRoof cd:Lavish 1011</h4>
+              <p>$3.19-$2.45. / square meter. 3000.0 square meters.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="../images/special-tiles/coolsam.jpg" class="myborder" />
+          <div class="card-body">
+            <div class="card-title">
+              <h4 class="text-center alert-info">CoolRoof CD:Blue 1111</h4>
+              <p>$6.36-$5.62. / square meter. 3000.0 square meters.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="../images/special-tiles/coolsamm.jpg" class="myborder" />
+          <div class="card-body">
+            <div class="card-title">
+              <h4 class="text-center alert-info">CoolRoof CD:White 1001</h4>
+              <p>$2.16-$4.55. / square meter. 3000.0 square meters.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="../images/special-tiles/samr.jpg" class="myborder" />
+          <div class="card-body">
+            <div class="card-title">
+              <h4 class="text-center alert-info">CoolRoof CD:Dark 1011</h4>
+              <p>$2.11-$9.77. / square meter. 3000.0 square meters.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="../images/special-tiles/coool.jpg" class="myborder" />
+          <div class="card-body">
+            <div class="card-title">
+              <h4 class="text-center alert-info">CoolRoof CD:Black 1080</h4>
+              <p>$5.76-$2.52. / square meter. 3000.0 square meters.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="../images/special-tiles/coolsa.jpg" class="myborder" />
+          <div class="card-body">
+            <div class="card-title">
+              <h4 class="text-center alert-info">CoolRoof CD:Brown 1010</h4>
+              <p>$3.56-$4.15. / square meter. 3000.0 square meters.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+  <!----------------------------------footer----------------------------------->
+  <footer class="bg-dark text-wgite pt-5 pb-4">
+    <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left">
+        <div class="col-md-3 col-lg-3 col-xl-3 mr-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">CERA</h5>
+          <p class="text-white">It’s a story of three decades, more than a quarter of a century. It’s a tale of a dream
+            realized against all odds.</p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mr-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">PRODUCTS</h5>
+          <p>
+            <a href="floor-tile.html" class="text-white">FLOOR TILES</a>
+          </p>
+          <p>
+            <a href="wall-tile.html" class="text-white">WALL TILES</a>
+          </p>
+          <p>
+            <a href="special-tile.html" class="text-white">SPECIAL TILE</a>
+          </p>
+          <p>
+            <a href="" class="text-white">E-catalouge</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mr-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">USEFUL LINKS</h5>
+          <p>
+            <a href="" class="text-white">Tile Calculator</a>
+          </p>
+          <p>
+            <a href="" class="text-white">Product comprasion</a>
+          </p>
+          <p>
+            <a href="contact-us.html" class="text-white">Location</a>
+          </p>
+          <p>
+            <a href="" class="text-white">Help</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mr-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+          <p>
+            <i class="fas fa-home mr-3 text-white"></i><span class="text-white">Dha phasev, karachi
+              Pakistan</span><br><br>
+            <i class="fas fa-envelope mr-3 text-white"></i><span class="text-white">theceratile@gmail.Com</span><br><br>
+            <i class="fas fa-phone mr-3 text-white"></i><span class="text-white">+92 3162859445</span><br><br>
+            <i class="fas fa-print mr-3 text-white"></i><span class="text-white"> +01 335 633 77</span><br><br>
+          </p>
+        </div>
+        <div class="col-md-6 footer-social">
+          <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instgram.com"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+
+</html>
